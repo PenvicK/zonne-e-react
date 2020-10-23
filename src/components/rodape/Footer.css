@@ -1,0 +1,49 @@
+.caixa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #F6AE2D;
+    margin-top: 150px;
+}
+.caixa p{
+    font-size: 15px;
+    font-family: 'Secular One', sans-serif;
+    color: #2c5265;
+}
+.feet{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    width: 1366px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color:  #F6AE2D;
+}
+.zonne{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.redes{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.copy{
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
