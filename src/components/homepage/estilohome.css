@@ -1,0 +1,109 @@
+body{
+    margin: auto;
+    background-color: #13315c;
+    font-family: agency fb;
+}
+cabecalho{
+    color: white;
+    font-family: agency fb;
+    font-size: 30px;
+}
+titulos{
+    color: white;
+    font-family: agency fb;
+    font-size: 120px;
+} 
+botao{
+    color: white;
+    font-family: agency fb;
+    font-size: 20px;   
+}
+#header{
+    background-color: #F6AE2D;
+    width: 1360px;
+    height: 88px; 
+    margin: 0 auto;
+}
+#container{
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    align-content: center; 
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 325px;
+    height: 88px;
+    background: #F6AE2D;
+    border-bottom-left-radius: 10px;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    background-color: #F6AE2D;
+    width: 1000px;
+    height: 88px;
+    border-bottom-right-radius: 10px;
+}
+#menu ul{
+    display: flex;
+    align-content: center;
+    list-style: none;
+}
+#menu li{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3px;
+    margin-right: 30px;
+}
+#menu a{
+    text-decoration: none;
+}
+
+.geral{
+    margin: 0 auto;
+    width: 960px;
+}
+.caixa{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    color: #F6AE2D;
+    font-size: 25px;
+}
+.lista{
+    color: #F6AE2D;
+    font-size: 25px;
+}
+h2{
+    color: white;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+}
+.features{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+#txt{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+}
+.beneficios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

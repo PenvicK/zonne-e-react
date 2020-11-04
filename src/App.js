@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Cabecalho/Header';
 import Footer from './components/rodape/Footer';
 import Contador from './components/AddCarrinho/Contador';
+import Home from './components/homepage/Home';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header />
       <Contador />
+      <Home/>
       <Footer/>
     </div>
   );
