@@ -1,5 +1,5 @@
 import React from'react';
-import PropsTexto from '../Cabecalho/TextoProps/PropsTexto';
+import PropsTexto from './TextoProps/PropsTexto';
 import './menu.css';
 
 function Menu(){
