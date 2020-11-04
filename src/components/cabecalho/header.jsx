@@ -1,6 +1,6 @@
 import React from  'react';
 import './menu.css';
-import Menu from './menu';
+import Menu from './Menu';
 
 
 function Header(){
