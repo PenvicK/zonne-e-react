@@ -27,7 +27,15 @@ function Login(){
                     </div>
                     <div>
                         <button className="enviar" type="submit"><a href=""><strong>ENTRAR</strong></a></button>
-                        <button className="cadastro" type="submit"><a href=""><strong>CADASTRAR</strong></a></button>
+                        <button className="cadastro" type="submit">
+                            <a className="linkCadastro" href="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <strong>CADASTRO</strong>
+                            </a>
+                        </button>
                     </div>
                 </div>
             </div> 
