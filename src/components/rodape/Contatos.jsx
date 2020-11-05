@@ -7,15 +7,15 @@ function Contatos(){
         <div className="contatos">
             <div className="contacto">
                 <img className="icon" src="https://cdn.discordapp.com/attachments/686368729923059721/768981929726312471/email.png"/>
-                <p>zonne-e@support.com</p>
+                <p className="textoFooter" id= "textoEmail">zonne-e@support.com</p>
             </div>
             <div className="contacto">
                 <img className="icon" src="https://cdn.discordapp.com/attachments/686368729923059721/768981924747935754/phone.png"/>
-                <p>+55 (45)4022-8922</p>
+                <p className="textoFooter">+55 (45)4022-8922</p>
             </div>
             <div className="contacto">
                 <img className="icon" src="https://cdn.discordapp.com/attachments/686368729923059721/768981924747935754/phone.png"/>
-                <p>+55 (45)3028-3424</p>
+                <p className="textoFooter">+55 (45)3028-3424</p>
             </div>
         </div>
     );
