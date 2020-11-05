@@ -26,14 +26,22 @@ function Login(){
                         <a href="" className="container-forgot"><botao>Esqueceu a Senha?</botao></a>
                     </div>
                     <div>
-                        <button className="enviar" type="submit"><a href=""><strong>ENTRAR</strong></a></button>
+                        <button className="enviar" type="submit">
+                            <a className="linkEnviar" href="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <strong>ENTRAR</strong>                               
+                            </a>
+                        </button>
                         <button className="cadastro" type="submit">
                             <a className="linkCadastro" href="">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                                <strong>CADASTRO</strong>
+                                <strong>CADASTRO</strong>                               
                             </a>
                         </button>
                     </div>
