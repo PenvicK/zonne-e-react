@@ -1,6 +1,5 @@
 import React from 'react';
-import Header from './components/cabecalho/Header';
-import Footer from './components/rodape/Footer';
+import Fcompra from './components/finalComp/Fcompra';
 import Home from './components/homepage/Home';
 import Login from './pages/Login';
 
