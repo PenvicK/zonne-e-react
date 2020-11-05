@@ -1,0 +1,20 @@
+{
+    "DadosPessoais":{
+        "Id001":{
+            "Nome":"Fernando",
+            "idade":"18",
+            "genero":"Masculino"
+        },
+        "Id002":{
+            "Nome":"Julio",
+            "idade":"24",
+            "genero":"Masculino"
+        },
+        "Id003":{
+            "Nome":"Larissa",
+            "idade":"27",
+            "genero":"Feminino"
+        }     
+    }
+
+}
