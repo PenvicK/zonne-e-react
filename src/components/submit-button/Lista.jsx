@@ -3,7 +3,7 @@ import React from "react";
 function Lista(props){
   return (
     <div>
-      <ul class="cabecalho">
+      <ul class="Cabecalho">
         <a href="" className="linkFooter"><strong>{props.texto1}</strong></a>
         <a href="" className="linkFooter"><strong>{props.texto2}</strong></a>
         <a href="" className="linkFooter"><strong>{props.texto3}</strong></a>
