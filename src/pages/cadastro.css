@@ -1,0 +1,59 @@
+
+.formulario{
+    background-color: white;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    border-top-width: 15px;
+    border-left-width: 5x;
+    border-right-width: 5x;
+    border-bottom-width: 5x;
+    border-color: #F6AE2D;
+    border-style: solid;
+}
+.titulo{
+    color:#13315c;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    display: flex;
+   justify-content: center;
+}
+.cadastro{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:100px;
+}
+.formulario input{
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+.nascimento{
+    display: flex;
+    flex-direction: row;
+
+}
+.nascimento input{
+    border: none;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    color: black;
+}
+.campo{
+    width: 100px;
+}
+.box{
+    display: flex;
+    justify-content: flex-start;
+}

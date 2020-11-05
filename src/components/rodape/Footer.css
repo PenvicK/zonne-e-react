@@ -47,3 +47,8 @@
     margin: 0 auto;
     justify-content: flex-start;
 }
+.linkFooter{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
