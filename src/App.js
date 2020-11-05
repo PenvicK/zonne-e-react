@@ -1,17 +1,14 @@
 import React from 'react';
 import Header from './components/cabecalho/Header';
 import Footer from './components/rodape/Footer';
-import Contador from './components/AddCarrinho/Contador';
 import Home from './components/homepage/Home';
+import Login from './pages/Login';
 
 
 function App() {
   return (
     <div>
-      <Header />
-      <Contador />
-      <Home />
-      <Footer />
+      <Login />
     </div>
   );
 }

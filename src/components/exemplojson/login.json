@@ -1,0 +1,20 @@
+{
+    "login":{
+        "usuario1":{
+            "email": "viniciusposser37@gmail.com",
+            "senha": "teste1"
+        },
+        "usuario2":{
+            "email": "johannteixeira2@gmail.com",
+            "senha": "teste2"
+        },
+        "usuario3":{
+            "email": "jojolimaj23@gmail.com",
+            "senha": "teste3"
+        },
+        "usuario4":{
+            "email": "gustavopicinato11@gmail.com",
+            "senha": "teste4"
+        }
+    }
+}
