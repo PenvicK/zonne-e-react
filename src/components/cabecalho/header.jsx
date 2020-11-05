@@ -1,6 +1,7 @@
 import React from  'react';
 import './menu.css';
 import Menu from './Menu';
+import logo from '../public/logo.png'
 
 
 function Header(){
@@ -8,7 +9,7 @@ function Header(){
         <header id="header">
             <nav id="container">
                 <div id="logo">  
-                    <img src="/logo.png" width="287,496" height="86,2488"/>
+                    <img src={logo} alt="Logo" width="287,496" height="86,2488" />
                 </div>
                 <Menu />
             </nav>

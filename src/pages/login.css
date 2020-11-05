@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+titulos{
+    color: white;
+    font-family: agency fb;
+    font-size: 120px;
+} 
+botao{
+    color: white;
+    font-family: agency fb;
+    font-size: 20px;   
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+    
+}
+.container-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.credenciais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    list-style: none;
+    
+}
+.checkcaixa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sen{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+    text-decoration: none;
+}
+.container-forgot{
+    display: flex;
+    justify-content:flex-start;
+    margin: 2px;
+}
+.enviar{ 
+    display: flex;
+    justify-content: flex-start;
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.enviar a{
+    font-size: 30px;
+    font-family: agency fb;
+    color: #13315c;
+    text-decoration: none;
+}
+.cadastro{
+    background-color:  #F6AE2D;
+    border: none;
+    box-shadow: black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 55px;
+    border-radius: 3px;
+}
+.cadastro a{
+    font-size: 53px;
+    font-family: agency fb;
+    color: #13315c;
+    text-decoration: none;
+}
+.cbox{
+    display: flex;
+    flex-direction: column;
+    margin-right: 83px;
+
+}
