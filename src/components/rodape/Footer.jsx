@@ -22,7 +22,7 @@ function Footer(){
                 <RedesSociais />
             </div>
             <div className="copy">
-                <p id="copyRight">© Copyright 2020 Zonne-e. All rights reserved.</p>
+                <p id="copyRight">© Copyright 2020 Zonne-e. All rights reserved..</p>
             </div>
         </footer>
     );
