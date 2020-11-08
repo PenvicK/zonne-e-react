@@ -4,7 +4,7 @@ import Footer from '../components/rodape/Footer';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from '../components/checkbox/Checkbox';
 import './login.css';
-
+import BotaoCadastro from '../components/CadastroPagina/BotaoCadastro';
 function Login(){
     return(
         <div>
@@ -35,15 +35,7 @@ function Login(){
                                 <strong>ENTRAR</strong>                               
                             </a>
                         </button>
-                        <button className="cadastro" type="submit">
-                            <a className="linkCadastro" href="">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <strong>CADASTRO</strong>                               
-                            </a>
-                        </button>
+                    <BotaoCadastro />
                     </div>
                 </div>
             </div> 
