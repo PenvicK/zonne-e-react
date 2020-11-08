@@ -5,6 +5,7 @@ import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from '../components/checkbox/Checkbox';
 import './login.css';
 import BotaoCadastro from '../components/CadastroPagina/BotaoCadastro';
+import EntrarButton from '../components/botaoEntrar/EntrarButton';
 function Login(){
     return(
         <div>
@@ -26,15 +27,7 @@ function Login(){
                         <a href="" className="container-forgot"><botao>Esqueceu a Senha?</botao></a>
                     </div>
                     <div>
-                        <button className="enviar" type="submit">
-                            <a className="linkEnviar" href="">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <strong>ENTRAR</strong>                               
-                            </a>
-                        </button>
+                    <EntrarButton />
                     <BotaoCadastro />
                     </div>
                 </div>
