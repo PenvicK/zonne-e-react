@@ -18,7 +18,7 @@ class Anuncio extends React.Component {
     return (
       <div className="container-allAnuncio">
         <div className="containerAnuncio">
-            <button className= "anun"onClick={this.state.showDiv === true && this.hideButtonDiv}>&#60;</button>
+            <button className= "anun" onClick={this.state.showDiv === true && this.hideButtonDiv}>&#60;</button>
             <div className="container">{this.state.showDiv && (
               <div>
                 {" "}
