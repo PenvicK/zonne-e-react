@@ -9,9 +9,11 @@ function Fcompra(){
     }
 
     return(
-        <button className="subimitFcompra" type="submit" onClick={handleClick}>
-          Finalizar Compra
-        </button>
+        <div id= "fcompra">
+            <button className="subimitFcompra" type="submit" onClick={handleClick}>
+             Finalizar Compra
+            </button>
+        </div>
     );
 }
 export default Fcompra;

@@ -28,7 +28,7 @@ function Header(){
                     </div>
                     <div id="menuHbr">
                         <a href="#" className= "iconHbr iconHbr-close linkHeaderHbr"><strong>&#9776;</strong></a>
-                        <ul className="cabecalhoHbr">
+                        <ul className="cabecalhoHbr cabecalhoHbrOpen">
                             <li><a href="" className= "linkHeaderHbr"><strong>home</strong></a></li>
                             <li><a href="" className= "linkHeaderHbr"><strong>produto</strong></a></li>
                             <li><a href="" className= "linkHeaderHbr"><strong>suporte</strong></a></li> 
