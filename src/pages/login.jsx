@@ -6,6 +6,8 @@ import Checkbox from '../components/checkbox/Checkbox';
 import './login.css';
 import BotaoCadastro from '../components/CadastroPagina/BotaoCadastro';
 import EntrarButton from '../components/botaoEntrar/EntrarButton';
+import Anuncio from '../components/anuncio/Anuncio'
+
 function Login(){
     return(
         <div>
@@ -32,6 +34,7 @@ function Login(){
                     </div>
                 </div>
             </div> 
+            <Anuncio />
             <Footer />
         </div>  
     );
