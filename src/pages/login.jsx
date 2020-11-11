@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from '../components/cabecalho/Header';
-import Footer from '../components/rodape/Footer';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from '../components/checkbox/Checkbox';
 import './login.css';
@@ -12,7 +10,7 @@ import Fcompra from '../components/finalComp/Fcompra'
 function Login(){
     return(
         <div>
-            <Header />
+            
             <div className="box">
                 <div>
                     <titulos><strong>LOGIN</strong></titulos>
@@ -37,7 +35,7 @@ function Login(){
             </div> 
             <Fcompra />
             <Anuncio />
-            <Footer />
+            
         </div>  
     );
 }

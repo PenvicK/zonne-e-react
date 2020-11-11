@@ -174,7 +174,7 @@ body{
 #checkHbr{
     display: none;
 }
-#checkHbr:checked .cabecalhoHbr{
+.cabecalhoHbrOpen{
     transform: translateX(75%);
 }
 #checkHbr:checked ~ #bar1{
