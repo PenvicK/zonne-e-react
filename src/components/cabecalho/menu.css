@@ -168,14 +168,14 @@ body{
     background-color: #f6b02d;
 }
 .cabecalhoHbr{
-    transform: translateX(-300%);
+    transform: translateX(-350px);
     transition: transform .2s linear;
+}
+.cabecalhoHbrOpen{
+    transform: translateX(150px);
 }
 #checkHbr{
     display: none;
-}
-.cabecalhoHbrOpen{
-    transform: translateX(75%);
 }
 #checkHbr:checked ~ #bar1{
     transform: translateY(4px) rotateZ(-45deg);
