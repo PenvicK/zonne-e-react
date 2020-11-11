@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import "./anuncio.css";
 import { imagemanuncio } from "./image";
+
 
 class Anuncio extends React.Component {
   constructor(props) {
@@ -18,14 +19,10 @@ class Anuncio extends React.Component {
     return (
       <div className="container-allAnuncio">
         <div className="containerAnuncio">
-            <button className= "anun" onClick={this.state.showDiv === true && this.hideButtonDiv}>&#60;</button>
-            <div className="container">{this.state.showDiv && (
-              <div>
-                {" "}
-                <img src={imagemanuncio} />{" "}
-              </div>
-            )}
-          </div>
+            <a  id='anun'className={this.state.showDiv ? "anunOn":"anunOff"} onClick={this.state.showDiv === true && this.hideButtonDiv || this.state.showDiv === false && this.hideButtonDiv}>{this.state.showDiv ? '<':'>'}</a>
+            <div className={this.state.showDiv ? 'imagenAnunOn':'imagenAnunOff'}>
+              <img src={imagemanuncio} />
+            </div>            
         </div>
       </div>
     );

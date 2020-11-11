@@ -1,19 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './menu.css';
 import logo from '../public/logo.png';
 import {Link} from 'react-router-dom';
 
 function MenuHbr(){
+    const [sidebar, setSidebar] = useState(false)
+
+    const showSidebar = () => setSidebar(!sidebar)
+
     return(
         <div id= "headerHbr">
             <div id="containerHbr">
                 <div id= "container_menuHbr">
-                    <div id="menuBar"for= "checkHbr">
-                        <input type="checkbox" id="checkHbr" />
+                    <div id="menuBar">
+                        <input type="checkbox" id='checkHbr' />
                         <div className="bar" id="bar1"></div>
                         <div className="bar" id="bar2"></div>
                         <div className="bar" id="bar3"></div>
-                        <label For="checkHbr" id="labelHbr"></label>
+                        <label For="checkHbr" id="labelHbr" onClick={showSidebar}></label>
                     </div>
                     
                     <div id="logoHbr">  
@@ -21,7 +25,7 @@ function MenuHbr(){
                     </div>
                 </div>
                 <div id="menuHbr">
-                    <ul className="cabecalhoHbr cabecalhoHbrOpen">
+                    <ul className={sidebar ? "cabecalhoHbr cabecalhoHbrOpen" : "cabecalhoHbr"}>
                         <Link to='/' className= "linkHeader">
                             <li><a href="" className= "linkHeaderHbr"><strong>home</strong></a></li>
                         </Link>
