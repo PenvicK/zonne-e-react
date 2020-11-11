@@ -10,10 +10,10 @@ function MenuHbr(){
                 <div id= "container_menuHbr">
                     <div id="menuBar"for= "checkHbr">
                         <input type="checkbox" id="checkHbr" />
-                        <label For="checkHbr" id="labelHbr"></label>
                         <div className="bar" id="bar1"></div>
                         <div className="bar" id="bar2"></div>
                         <div className="bar" id="bar3"></div>
+                        <label For="checkHbr" id="labelHbr"></label>
                     </div>
                     
                     <div id="logoHbr">  
