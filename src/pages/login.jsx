@@ -10,7 +10,6 @@ import Fcompra from '../components/finalComp/Fcompra'
 function Login(){
     return(
         <div>
-            
             <div className="box">
                 <div>
                     <titulos><strong>LOGIN</strong></titulos>
