@@ -5,7 +5,6 @@ import './login.css';
 import BotaoCadastro from '../components/CadastroPagina/BotaoCadastro';
 import EntrarButton from '../components/botaoEntrar/EntrarButton';
 import Anuncio from '../components/anuncio/Anuncio'
-import Fcompra from '../components/finalComp/Fcompra'
 
 function Login(){
     return(
@@ -32,7 +31,6 @@ function Login(){
                     </div>
                 </div>
             </div> 
-            <Fcompra />
             <Anuncio />
             
         </div>  
