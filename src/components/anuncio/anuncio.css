@@ -41,3 +41,8 @@
     transform: translateX(-100%);
     transition: all 0.2s;
 }
+.container-allAnuncio{
+    display: block;
+    position: absolute;
+    top: 600px;
+}
