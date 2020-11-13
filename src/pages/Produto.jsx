@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import'./styles/produto.css';
-=======
 import './styles/produto.css';
->>>>>>> f15437cb605aa9d7ed87708cafaa924f577f88fa
 import camera from '../components/public/camera.png';
 
 function Produto(){

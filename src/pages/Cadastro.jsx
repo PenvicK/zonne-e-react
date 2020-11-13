@@ -1,11 +1,8 @@
 import React from 'react';
 import'./styles/cadastro.css';
-<<<<<<< HEAD
 import '../components/componenteLogin/Caixa';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from'../components/checkbox/Checkbox';
-=======
->>>>>>> f15437cb605aa9d7ed87708cafaa924f577f88fa
 
 function Cadastro(){
     return(
