@@ -8,7 +8,7 @@ import Anuncio from '../components/anuncio/Anuncio'
 
 function Login(){
     return(
-        <div>
+        <div id="headerON">
             <div className="box">
                 <div>
                     <titulos><strong>LOGIN</strong></titulos>

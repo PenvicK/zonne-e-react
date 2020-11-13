@@ -9,3 +9,4 @@ function DadosP(){
     );
 
 }
+export default DadosP;
