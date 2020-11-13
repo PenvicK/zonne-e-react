@@ -6,8 +6,8 @@ import Login from './pages/Login';
 import Shop from './pages/Shop';
 import Cadastro from './pages/Cadastro';
 import Produto from './pages/Produto';
+import Perfil from './pages/Perfil';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/cadastro" component={Cadastro} />
         <Route path="/shop" component={Shop} />
+        <Route path="/perfil" component={Perfil} />
       </Switch>
       <Footer />
     </Router>

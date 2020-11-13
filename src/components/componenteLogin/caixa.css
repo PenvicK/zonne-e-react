@@ -8,3 +8,6 @@
     padding-left: 15px;
     margin: 10px;
 }
+.credinput:focus{
+    outline: none;
+}
