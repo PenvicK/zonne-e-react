@@ -1,5 +1,5 @@
 import React from 'react';
-import './produto.css';
+import'./styles/produto.css';
 import camera from '../components/public/camera.png';
 
 function Produto(){

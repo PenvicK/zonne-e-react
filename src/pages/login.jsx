@@ -1,7 +1,7 @@
 import React from 'react';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from '../components/checkbox/Checkbox';
-import './login.css';
+import './styles/login.css';
 import BotaoCadastro from '../components/CadastroPagina/BotaoCadastro';
 import EntrarButton from '../components/botaoEntrar/EntrarButton';
 import Anuncio from '../components/anuncio/Anuncio'
