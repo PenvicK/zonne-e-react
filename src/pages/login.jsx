@@ -8,7 +8,7 @@ import Anuncio from '../components/anuncio/Anuncio'
 
 function Login(){
     return(
-        <div>
+        <div id="headerON">
             <div className="box">
                 <div>
                     <titulos><strong>LOGIN</strong></titulos>
@@ -25,10 +25,10 @@ function Login(){
                         </div>
                         <a href="" className="container-forgot"><botao>Esqueceu a Senha?</botao></a>
                     </div>
-                    <div>
-                    <EntrarButton />
-                    <BotaoCadastro />
-                    </div>
+                    
+                    <EntrarButton id="boxInput"/>
+                    <BotaoCadastro id="boxInput"/>
+                    
                 </div>
             </div> 
             <Anuncio />

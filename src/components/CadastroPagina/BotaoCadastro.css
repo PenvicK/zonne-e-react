@@ -6,6 +6,7 @@
     margin-top: 20px;
     margin-bottom: 55px;
     border-radius: 3px;
+    margin-right: 20px;
 }
 .linkCadastro{
     position: relative;
@@ -21,7 +22,7 @@
 .linkCadastro:hover{
     color: white;
     transition: 0.2s;
-    padding: 20px;
+    padding: 2px;
 }
 .linkCadastro span{
     position: absolute;
