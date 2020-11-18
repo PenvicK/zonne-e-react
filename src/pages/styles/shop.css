@@ -2,43 +2,48 @@
 
 
 .boxShop{
-    background-color: white;
-    width: 900px;
+    width: 800px;
     margin: 0 auto;
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    border-radius: 15px;
-    border-top-width: 15px;
-    border-left-width: 5x;
-    border-right-width: 5x;
-    border-bottom-width: 5x;
-    border-color: #F6AE2D;
-    border-style: solid;
+    
 }
 .sectioncameraShop{
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     color:  #13315c;
     font-size: 13px;
     font-weight: bold;
+    width:  300px;
     padding-bottom: 0px;
-    padding-right: 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: white;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-left-width: 4px;
+    border-left-style: solid;
     border-right-width: 3px;
     border-right-style: solid;
-    border-right-color:  #F6AE2D;
+    border-color:  #F6AE2D;
 }
-#cameraShop{
+.cameraShop{
     display: flex;
     justify-content: center;
+    height: 250px;
+    width: 250px;
+    color: black;
 }
 .quantShop{
-    background-color: white;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 15px;
+    justify-content: center;
+
 }
 .menosShop{
     background-color: #F6AE2D;
@@ -52,6 +57,13 @@
     border-width: 1px;
     border-color: black;
     border-style: solid;
+}
+.menosShop:focus{
+    outline: none;
+}
+.menosShop:hover{
+    background-color: #ff8800;
+    color: white;
 }
 .numShop{
     padding-top: 5px;
@@ -78,17 +90,29 @@
     border-color: black;
     border-style: solid;
 }
+.maisShop:focus {
+    outline: none;
+}
+.maisShop:hover{
+    background-color:  #ff8800;
+    color: white;
+}
 .formShop{
     padding-top: 45px;
     padding-bottom: 10px;
-    margin-left: 20px;
-    padding-right: 40px;
+    padding-left: 20px;
+    width:  300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
     border-right-width: 3px;
     border-right-style: solid;
-    border-right-color:  #F6AE2D;
+    border-color:  #F6AE2D;
+    background-color: white;
 }
 .caixasShop{
     display: flex;
@@ -100,14 +124,25 @@
     margin-top: 10px;
 }
 .form2Shop{
-    margin-top: 73px;
-    margin-left: 20px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 45px;
+    width:  400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-right-width: 4px;
+    border-right-style: solid;
+    border-color:  #F6AE2D;
 }
 .finalShop{
-    margin-top: 97px;
+    margin-top:120px;
 }
 .alterarShop{
     display: flex;
@@ -134,6 +169,12 @@
     font-size: 20px;
     font-family: agency fb;
     color: #13315c;
+}
+.alterarShop:hover{
+    color: white;
+}
+.cancelarShop:hover{
+    color: white;
 }
 .finalizarShop{
     display: flex;

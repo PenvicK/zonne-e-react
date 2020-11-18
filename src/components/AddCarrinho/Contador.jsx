@@ -4,7 +4,7 @@ import '../../pages/styles/shop.css'
 
 function Contador(){
     const [contador,setContador] = useState(1);
-
+    
     function adicionarContador(){
         setContador(contador + 1);
     }

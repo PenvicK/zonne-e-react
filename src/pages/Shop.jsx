@@ -1,62 +1,67 @@
 import React from 'react';
 import './styles/shop.css';
-import camera from '../components/public/camera.png';
 import Contador from '../components/AddCarrinho/Contador';
 import Fcompra from '../components/finalComp/Fcompra';
+import { AiFillCamera as Camera } from "react-icons/ai";
+import DadosPessoais from'../components/exemplojson/DadosPessoais.json'
+
+const valorProduto = 750;
+const valorFrete = 150;
+const quantidade = 0;
 
 function Shop(){
     return(
-        <section class="boxShop">
-            <div class="sectioncameraShop">
-                <img src={camera} id="cameraShop" alt='camera' />
+        <section className="boxShop">
+            <div className="sectioncameraShop">
+                <Camera className="cameraShop"/>
                 <Contador />
             </div>
-            <div class="formShop">
-                <div class="txtShop">
+            <div className="formShop">
+                <div className="txtShop">
                     <div>
                         NOME:
                     </div>
                     <div>
-                        CPF:
+                        CPF:{}
                     </div>
                     <div>
-                        ESTADO:
+                        ESTADO:{}
                     </div>
                     <div>
-                        CIDADE:
+                        CIDADE:{}
                     </div>
                     <div>
-                        BAIRRO:
+                        BAIRRO:{}
                     </div>
                     <div>
-                        RUA, N°:
+                        RUA, N°:{}
                     </div>
                 </div>
-                <div class="caixasShop">
-                    <div class="altShop">
-                        <button class="alterarShop"><strong>ALTERAR DADOS</strong></button>
+                <div className="caixasShop">
+                    <div className="altShop">
+                        <button className="alterarShop"><strong>ALTERAR DADOS</strong></button>
                     </div>
-                    <div class="cancel">
-                        <button class="cancelarShop"><strong>CANCELAR PEDIDO</strong></button>
+                    <div className="cancel">
+                        <button className="cancelarShop"><strong>CANCELAR PEDIDO</strong></button>
                     </div>
                 </div>
             </div>
-            <div class="form2Shop">
-                <div class="txtShop">
+            <div className="form2Shop">
+                <div className="txtShop">
                     <div>
-                        VALOR DO PRODUTO:
+                        VALOR DO PRODUTO: R${valorProduto},00
                     </div>
                     <div>
-                        VALOR DO FRETE:
+                        VALOR DO FRETE: R${valorFrete},00
                     </div>
                     <div>
-                        VALOR TOTAL DO PRODUTO:
+                        VALOR TOTAL DO PRODUTO: R${valorProduto * quantidade},00
                     </div>
                     <div>
-                        VALOR TOTAL:
+                        VALOR TOTAL: R${valorProduto + valorFrete}
                     </div>
                 </div>
-                <div class="finalShop">
+                <div className="finalShop">
                     <Fcompra />
                 </div>
             </div>
