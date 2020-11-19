@@ -31,11 +31,14 @@ function Cadastro(){
                 <Caixa funcao="text" name="complemento" texto="Complemento" size="12" maxlength="40" />
 
                 <div className="boxCadastro">
-                    <Checkbox />
-                    Aceita os termos do contrato, ler contrato
+                    <div className="checkCadastro">
+                     <Checkbox className="Check"/>
+                    </div>
+                     <p> Aceita os termos do contrato, ler contrato</p>
+
                 </div>
-                <div> 
-                    <input type="submit" value="Criar conta" name="Criar conta" />
+                <div > 
+                    <input className="BotaoCriar" type="submit" value="Criar conta" name="Criar conta" />
                 </div> 
             </form>
             

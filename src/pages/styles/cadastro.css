@@ -51,10 +51,8 @@
 }
 .boxCadastro{
     display: flex;
-    flex-direction: row;
-    
     font-family: agency fb;
-    margin-right: 280px;
+    height: 10  0px;
 }
 texto{
     color: white;
@@ -66,4 +64,21 @@ texto{
     justify-content: space-between;
     margin: 2px;
     text-decoration: none;
+}
+.checkCadastro{
+    height: 92px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    margin: 2px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.BotaoCriar{
+    font-family:agency fb;
+    font-size:40px ;
+    margin-left: 10px;
+    background-color:#F6AE2D;
+    color: #13315c;
+
 }
