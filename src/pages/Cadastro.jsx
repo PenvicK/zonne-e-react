@@ -4,6 +4,7 @@ import '../components/componenteLogin/Caixa';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from'../components/checkbox/Checkbox';
 
+
 function Cadastro(){
     return(
         <section className="formulario">
