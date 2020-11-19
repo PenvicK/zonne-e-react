@@ -10,7 +10,7 @@ function Faq(){
                         <h3> Quem somos ?</h3>
                     </div>
                         <div className="branco">
-                            <p>Uma equipe de empreendedores do ramo de computação e 
+                            <p className="paragrafo-faq">Uma equipe de empreendedores do ramo de computação e 
                             software, empenhados em facilitar a vida de nossos clientes. </p>
                         </div>
                 </div>
@@ -20,7 +20,7 @@ function Faq(){
                         sistema de Painéis Solares ?</h3>
                     </div>
                         <div className="branco">
-                            <p>Sim, o Zonne-E é compatível com todas as versões 
+                            <p className="paragrafo-faq">Sim, o Zonne-E é compatível com todas as versões 
                             de sistemas fotovoltaicos presentes no mercado.</p>
                         </div>
                 </div>
@@ -29,7 +29,7 @@ function Faq(){
                         <h3>Já adquiriu o Zonne-E. Como faço para utiliza-lo ?</h3>
                     </div>    
                         <div className="branco">
-                            <p>Após se cadastrar no site, basta acessar a aba 
+                            <p className="paragrafo-faq">Após se cadastrar no site, basta acessar a aba 
                             de "Dispositivios Instalados" e clicar na opção de 
                             adicionar um dispositivo, em seguida podera ver 
                             todas as informções sobre sua geração de energia.</p>
@@ -41,7 +41,7 @@ function Faq(){
                         a mesma conta ?</h3>
                     </div>
                         <div className="branco">    
-                            <p>Sim, caso adquira mais de um produto, basta  
+                            <p className="paragrafo-faq">Sim, caso adquira mais de um produto, basta  
                             adicionar o novo dispositivo a sua lista de adquiridos 
                             e seleciona-lo na aba de "dispositivos instalados" 
                             para gerenciar suas informações. </p>

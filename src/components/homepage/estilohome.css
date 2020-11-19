@@ -9,15 +9,16 @@
     margin: 0 auto;
     width: 960px;
 }
-.caixa{
+.caixaHome{
     display: flex;
     flex-direction: column;
+    background-color: #13315c;
 }
 p{
-    color: #F6AE2D;
+    color:#F6AE2D;
     font-size: 25px;
 }
-.lista{
+.listaHome{
     color: #F6AE2D;
     font-size: 25px;
 }
@@ -30,16 +31,20 @@ h2{
     display: flex;
     align-items: center;
 }
-.texto{
+.textoHome{
     display: flex;
     flex-direction: column;
+}
+.img1 {
+    display: flex;
+    align-items: center;
 }
 .features{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
-#txt{
+.txt{
     display: flex;
     align-items: flex-end;
     flex-direction: column;

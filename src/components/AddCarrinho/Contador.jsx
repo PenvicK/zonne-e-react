@@ -1,9 +1,10 @@
 import React from  'react';
 import {useState} from 'react';
+import '../../pages/styles/shop.css'
 
 function Contador(){
     const [contador,setContador] = useState(1);
-
+    
     function adicionarContador(){
         setContador(contador + 1);
     }
@@ -15,16 +16,16 @@ function Contador(){
     }
 
     return(
-        <div className="sectioncamera">
-            <div className="quant">
-                <div className="menos">
-                    <button onClick={diminuirContador}>-</button>
+        <div >
+            <div className="quantShop">
+                <div>
+                    <button className="menosShop"onClick={diminuirContador}>-</button>
                 </div>
-                <div className="num">
+                <div className="numShop">
                     {contador}
                 </div>
-                <div className="mais">
-                    <button onClick={adicionarContador}>+</button>
+                <div >
+                    <button className="maisShop"onClick={adicionarContador}>+</button>
                 </div>
             </div>
         </div>
