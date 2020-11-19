@@ -23,16 +23,18 @@ function Produto(){
                     </div>
                 </div>
                 <div className="texto"> 
-                    <h2>Zonne-E</h2>
+                    <h2 className="produto-zonne-e">Zonne-E</h2>
                     <div className="preco">
                         <h1>R$ XXXX,XXXXX</h1>
                     </div> 
-                    <div>
+                    <div className="container-cep">
                         <h3>CEP</h3>
-                        <input type="text" name="cep" size="2" maxlength="5" /> - <input type="text" name="cep2" size="" maxlength="3" />
-                        <button type="submit">
+                        <div className="container-cep-input">
+                            <input type="text" name="cep" size="2" maxlength="5" /> - <input type="text" name="cep2" size="" maxlength="3" />
+                        </div>
+                        <spam className="adicionar-carrinho" type="submit">
                             <a href="">adicionar carrinho</a>
-                        </button>
+                        </spam>
                     </div>
                 </div>
             </div>
