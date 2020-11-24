@@ -10,6 +10,7 @@ import Perfil from './pages/Perfil';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Suporte from './pages/Suporte';
 import Faq from './pages/Faq';
+import DadosP from './pages/DadosP';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/faq" component={Faq} />
         <Route path="/shop" component={Shop} />
         <Route path="/perfil" component={Perfil} />
+        <Route path="/dados" component={DadosP} />
       </Switch>
       <Footer />
     </Router>

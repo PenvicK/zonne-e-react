@@ -20,7 +20,7 @@ function Suporte(){
             </div>    
         </div>        
             <div className="container-cont-sup">    
-                <div className="contatos">
+                <div className="contatos-sup">
                     <h3>CONTATOS</h3>
                     <h3>zonne-e@suporte.com</h3>
                     <h3>55+ (45)9xxxx-xxxx</h3>
