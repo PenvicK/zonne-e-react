@@ -1,0 +1,41 @@
+.box-dados{
+    display: block;
+    position: absolute;
+    background-color:rgb(80, 78, 78);
+    width: 100%;
+    height: 20%;
+}
+.container-img-dados{
+    display: flex;
+
+}
+.box-ul-dados{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.ul-dados{
+    list-style: none;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin-right: 10px;
+    padding: 10px;
+    font-family: agency fb;
+    color:  #F6AE2D;
+    font-weight: bold;
+    font-size: 30px;
+}
+.iten-2-off{
+    display: none;
+}
+.iten-1-off{
+    display: none;
+}
