@@ -1,20 +1,24 @@
 import React from 'react';
 import './Footer.css';
+import instagram from '../public/instagram.png';
+import facebook from '../public/facebook.png';
+import twitter from '../public/twitter.png';
+
 
 function Redes_sociais(){
     return(
         
         <div className="redes">
             <div className="sociais">
-                <img className="icon" src="https://cdn.discordapp.com/attachments/686368729923059721/768981899216551936/instagram-233.png"/>
+                <img className="icon" src={instagram} alt="instagram" />
                 <p className="textoFooter">@Zonne-e</p>
             </div>
             <div className="sociais">
-                <img className="icon" src="https://cdn.discordapp.com/attachments/686368729923059721/768981932545146920/facebook.png"/>
+                <img className="icon" src={facebook} alt="facebook"/>
                 <p className="textoFooter">@Zonne-e</p>
             </div>
             <div className="sociais">
-                <img className="icon" src="https://cdn.discordapp.com/attachments/686368729923059721/768981927310917652/twitter.png"/>
+                <img className="icon" src={twitter} alt="twitter"/>
                 <p className="textoFooter">@Zonne-e</p>
             </div>
         </div>

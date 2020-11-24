@@ -1,12 +1,12 @@
 import React from  'react';
-import './estilohome.css';
-import Banner from './Banner';
-import img1Home from '../public/img1home.png';
-import img2Home from '../public/img2home.png';
-import img3Home from '../public/img3home.png';
-import img4Home from '../public/img4home.png';
-import img5Home from '../public/img5home.png';
-import Texto from '../homepage/text/Texto'
+import './styles/estilohome.css';
+import Banner from '../components/homepage/Banner';
+import img1Home from '../components/public/img1home.png';
+import img2Home from '../components/public/img2home.png';
+import img3Home from '../components/public/img3home.png';
+import img4Home from '../components/public/img4home.png';
+import img5Home from '../components/public/img5home.png';
+import Texto from '../components/homepage/text/Texto'
 
 function Home(){
     return(
