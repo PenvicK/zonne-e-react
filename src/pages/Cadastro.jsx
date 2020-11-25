@@ -3,6 +3,7 @@ import'./styles/cadastro.css';
 import '../components/componenteLogin/Caixa';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from'../components/checkbox/Checkbox';
+import { Link } from 'react-router-dom';
 
 
 function Cadastro(){
@@ -35,11 +36,12 @@ function Cadastro(){
                     <div className="checkCadastro">
                      <Checkbox className="Check"/>
                     </div>
-                     <p> Aceita os termos do contrato, ler contrato</p>
-
+                    <p> Aceita os termos do contrato, ler contrato</p>
                 </div>
                 <div > 
-                    <input className="BotaoCriar" type="submit" value="Criar conta" name="Criar conta" />
+                    <Link to="/login" className="link-btn-cadastro">
+                        <input className="BotaoCriar" type="submit" value="Criar conta" name="Criar conta" />
+                    </Link>
                 </div> 
             </form>
             

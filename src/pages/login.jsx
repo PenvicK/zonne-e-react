@@ -4,7 +4,7 @@ import Checkbox from '../components/checkbox/Checkbox';
 import './styles/login.css';
 import BotaoCadastro from '../components/CadastroPagina/BotaoCadastro';
 import EntrarButton from '../components/botaoEntrar/EntrarButton';
-import Anuncio from '../components/anuncio/Anuncio'
+import Anuncio from '../components/anuncio/Anuncio';
 
 function Login(){
     return(
@@ -25,7 +25,6 @@ function Login(){
                         </div>
                         <a href="" className="container-forgot"><botao>Esqueceu a Senha?</botao></a>
                     </div>
-                    
                     <EntrarButton id="boxInput"/>
                     <BotaoCadastro id="boxInput"/>
                     
