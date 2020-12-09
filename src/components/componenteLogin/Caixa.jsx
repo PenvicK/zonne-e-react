@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './caixa.css';
 
-function Caixa(props){
+function Caixa(props){    
     return(
-        <input className="credinput" type={props.funcao} placeholder={props.texto}></input>
+        <input onChange={props.change} className="credinput" type={props.funcao} placeholder={props.texto} value={props.valor}></input>
     );
 }
 export default Caixa;

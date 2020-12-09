@@ -8,6 +8,7 @@
 .geral{
     margin: 0 auto;
     width: 960px;
+    padding-bottom: 150px;
 }
 .caixaHome{
     display: flex;
