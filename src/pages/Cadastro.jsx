@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import'./styles/cadastro.css';
 import '../components/componenteLogin/Caixa';
 import Caixa from '../components/componenteLogin/Caixa';
@@ -7,30 +7,89 @@ import { Link } from 'react-router-dom';
 
 
 function Cadastro(){
+    const [nome, setNome] = useState("");
+    const [cpf, setCpf] = useState("");
+    const [telefone, setTelefone] = useState("");
+    const [dia, setDia] = useState("");
+    const [mes, setMes] = useState("");
+    const [ano, setAno] = useState("");
+    const [email, setEmail] = useState("");
+    const [confirmEmail, setConfirmEmail] = useState("");
+    const [senha, setSenha] = useState("");
+
+    const handleSubmit = (e) =>{
+        console.log("Botão Submit Pressionado!");
+        console.log(nome);
+        console.log(cpf);
+        console.log(telefone);
+        console.log(dia);
+        console.log(mes);
+        console.log(ano);
+        console.log(email);
+        console.log(confirmEmail);
+        console.log(senha);
+        e.preventDefault();
+    }
+    const handleChangeNome = (e) =>{
+        setNome(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeCpf = (e) =>{
+        setCpf(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeTelefone = (e) =>{
+        setTelefone(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeDia = (e) =>{
+        setDia(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeMes = (e) =>{
+        setMes(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeAno = (e) =>{
+        setAno(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeEmail = (e) =>{
+        setEmail(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeConfirmEmail = (e) =>{
+        setConfirmEmail(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeSenha = (e) =>{
+        setSenha(e.target.value)
+        e.preventDefault();
+    }
     return(
         <section className="formulario">
             <div className="titulo">
                 Cadastro
             </div>
-            <form action="login.html" method="POST" className="cadastroPage">
-                <Caixa funcao="text" name="nome completo" texto="Nome Completo:" size="40" id="campo" /> 
-                <Caixa funcao="text" name="cpf" texto="CPF:" size="12" maxlength="11" /> 
-                <Caixa funcao="text" name="telefone" texto="Telefone" size="12" maxlength="14" /> 
+            <form onSubmit={handleSubmit}  className="cadastroPage">
+                <Caixa change={handleChangeNome} valor={nome} funcao="text" texto="Nome Completo:" size="40" id="campo" /> 
+                <Caixa change={handleChangeCpf} valor={cpf} funcao="text" texto="CPF:" size="12" maxlength="11" /> 
+                <Caixa change={handleChangeTelefone} valor={telefone} funcao="text" texto="Telefone" size="12" maxlength="14" /> 
                 <div className="nascimento">
-                    <Caixa funcao="text" name="data de nascimento" texto="Dia" size="1" maxlength="2" />
-                    <Caixa funcao="text" name="mes" texto="Mês" size="1" maxlength="2" />
-                    <Caixa funcao="text" name="ano" texto="Ano" size="1" maxlength="4" /> 
+                    <Caixa change={handleChangeDia} valor={dia} funcao="text" texto="Dia" size="1" maxlength="2" />
+                    <Caixa change={handleChangeMes} valor={mes} funcao="text" texto="Mês" size="1" maxlength="2" />
+                    <Caixa change={handleChangeAno} valor={ano} funcao="text" texto="Ano" size="1" maxlength="4" /> 
                 </div>
-                <Caixa funcao="text" name="e-Mail" texto="E-Mail" size="40" /> 
-                <Caixa funcao="text" name="confirmar e-mail" texto="Confirmar E-Mail" size="40" />   
-                <Caixa funcao="password" name="senha" texto="Senha" size="12" maxlength="15" /> 
-                <Caixa funcao="password" name="confirmar senha" texto="Confirmar Senha" size="12" maxlength="15" /> 
-                <Caixa funcao="text" name="cep" texto="CEP:" size="2" maxlength="8" />
-                <Caixa funcao="text" name="estado" texto="Estado" size="12" maxlength="40" /> 
-                <Caixa funcao="text" name="cidade" texto="Cidade" size="12" maxlength="40" /> 
-                <Caixa funcao="text" name="rua" texto="Rua" size="12" maxlength="30" /> 
-                <Caixa funcao="text" name="numero" texto="Numero" size="12" maxlength="10" />
-                <Caixa funcao="text" name="complemento" texto="Complemento" size="12" maxlength="40" />
+                <Caixa change={handleChangeEmail} valor={email} funcao="text" texto="E-Mail" size="40" /> 
+                <Caixa change={handleChangeConfirmEmail} valor={confirmEmail} funcao="text" texto="Confirmar E-Mail" size="40" />   
+                <Caixa change={handleChangeSenha} valor={senha} funcao="password" texto="Senha" size="12" maxlength="15" /> 
+                {/* <Caixa change={handleChangeConfirmEmail} funcao="password" texto="Confirmar Senha" size="12" maxlength="15" /> 
+                <Caixa change={handleChangeConfirmEmail} funcao="text" texto="CEP:" size="2" maxlength="8" />
+                <Caixa change={} funcao="text" texto="Estado" size="12" maxlength="40" /> 
+                <Caixa change={} funcao="text" texto="Cidade" size="12" maxlength="40" /> 
+                <Caixa change={} funcao="text" texto="Rua" size="12" maxlength="30" /> 
+                <Caixa change={} funcao="text" texto="Numero" size="12" maxlength="10" />
+                <Caixa change={} funcao="text" texto="Complemento" size="12" maxlength="40" /> */}
 
                 <div className="boxCadastro">
                     <div className="checkCadastro">
@@ -39,10 +98,9 @@ function Cadastro(){
                     <p> Aceita os termos do contrato, ler contrato</p>
                 </div>
                 <div > 
-                    <Link to="/login" className="link-btn-cadastro">
-                        <input className="BotaoCriar" type="submit" value="Criar conta" name="Criar conta" />
-                    </Link>
-                </div> 
+
+                        <input className="BotaoCriar" type="submit" value="Criar conta"/>
+                </div>
             </form>
             
         </section>      
