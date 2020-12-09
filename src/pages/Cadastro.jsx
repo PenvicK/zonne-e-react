@@ -16,6 +16,13 @@ function Cadastro(){
     const [email, setEmail] = useState("");
     const [confirmEmail, setConfirmEmail] = useState("");
     const [senha, setSenha] = useState("");
+    const [confirmSenha, setConfirmSenha] = useState("");
+    const [cep, setCep] = useState("");
+    const [estado, setEstado] = useState("");
+    const [cidade, setCidade] = useState("");
+    const [rua, setRua] = useState("");
+    const [numero, setNumero] = useState("");
+    const [complemento, setComplemento] = useState("");
 
     const handleSubmit = (e) =>{
         console.log("Botão Submit Pressionado!");
@@ -28,6 +35,13 @@ function Cadastro(){
         console.log(email);
         console.log(confirmEmail);
         console.log(senha);
+        console.log(confirmSenha);
+        console.log(cep);
+        console.log(estado);
+        console.log(cidade);
+        console.log(rua);
+        console.log(numero);
+        console.log(complemento);
         e.preventDefault();
     }
     const handleChangeNome = (e) =>{
@@ -66,6 +80,34 @@ function Cadastro(){
         setSenha(e.target.value)
         e.preventDefault();
     }
+    const handleChangeConfirmSenha = (e) =>{
+        setConfirmSenha(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeCep = (e) =>{
+        setCep(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeEstado = (e) =>{
+        setEstado(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeCidade = (e) =>{
+        setCidade(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeRua = (e) =>{
+        setRua(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeNumero = (e) =>{
+        setNumero(e.target.value)
+        e.preventDefault();
+    }
+    const handleChangeComplemento = (e) =>{
+        setComplemento(e.target.value)
+        e.preventDefault();
+    }
     return(
         <section className="formulario">
             <div className="titulo">
@@ -83,13 +125,13 @@ function Cadastro(){
                 <Caixa change={handleChangeEmail} valor={email} funcao="text" texto="E-Mail" size="40" /> 
                 <Caixa change={handleChangeConfirmEmail} valor={confirmEmail} funcao="text" texto="Confirmar E-Mail" size="40" />   
                 <Caixa change={handleChangeSenha} valor={senha} funcao="password" texto="Senha" size="12" maxlength="15" /> 
-                {/* <Caixa change={handleChangeConfirmEmail} funcao="password" texto="Confirmar Senha" size="12" maxlength="15" /> 
-                <Caixa change={handleChangeConfirmEmail} funcao="text" texto="CEP:" size="2" maxlength="8" />
-                <Caixa change={} funcao="text" texto="Estado" size="12" maxlength="40" /> 
-                <Caixa change={} funcao="text" texto="Cidade" size="12" maxlength="40" /> 
-                <Caixa change={} funcao="text" texto="Rua" size="12" maxlength="30" /> 
-                <Caixa change={} funcao="text" texto="Numero" size="12" maxlength="10" />
-                <Caixa change={} funcao="text" texto="Complemento" size="12" maxlength="40" /> */}
+                <Caixa change={handleChangeConfirmSenha} valor={confirmSenha} funcao="password" texto="Confirmar Senha" size="12" maxlength="15" /> 
+                <Caixa change={handleChangeCep} valor={cep} funcao="text" texto="CEP:" size="2" maxlength="8" />
+                <Caixa change={handleChangeEstado} valor={estado} funcao="text" texto="Estado" size="12" maxlength="40" /> 
+                <Caixa change={handleChangeCidade} valor={cidade} funcao="text" texto="Cidade" size="12" maxlength="40" /> 
+                <Caixa change={handleChangeRua} valor={rua} funcao="text" texto="Rua" size="12" maxlength="30" /> 
+                <Caixa change={handleChangeNumero} valor={numero} funcao="text" texto="Numero" size="12" maxlength="10" />
+                <Caixa change={handleChangeComplemento} valor={complemento} funcao="text" texto="Complemento" size="12" maxlength="40" /> 
 
                 <div className="boxCadastro">
                     <div className="checkCadastro">
