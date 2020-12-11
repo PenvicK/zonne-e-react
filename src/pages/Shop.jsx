@@ -3,7 +3,7 @@ import './styles/shop.css';
 import Contador from '../components/AddCarrinho/Contador';
 import Fcompra from '../components/finalComp/Fcompra';
 import { AiFillCamera as Camera } from "react-icons/ai";
-import DadosPessoais from'../components/exemplojson/DadosPessoais.json'
+// import DadosPessoais from'../components/exemplojson/DadosPessoais.json'
 
 const valorProduto = 750;
 const valorFrete = 150;

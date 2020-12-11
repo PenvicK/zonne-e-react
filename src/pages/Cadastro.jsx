@@ -25,24 +25,31 @@ function Cadastro(){
     const [complemento, setComplemento] = useState("");
 
     const handleSubmit = (e) =>{
-        console.log("Botão Submit Pressionado!");
-        console.log(nome);
-        console.log(cpf);
-        console.log(telefone);
-        console.log(dia);
-        console.log(mes);
-        console.log(ano);
-        console.log(email);
-        console.log(confirmEmail);
-        console.log(senha);
-        console.log(confirmSenha);
-        console.log(cep);
-        console.log(estado);
-        console.log(cidade);
-        console.log(rua);
-        console.log(numero);
-        console.log(complemento);
+        // console.log("Botão Submit Pressionado!");
+        // console.log(nome);
+        // console.log(cpf);
+        // console.log(telefone);
+        // console.log(dia);
+        // console.log(mes);
+        // console.log(ano);
+        // console.log(email);
+        // console.log(confirmEmail);
+        // console.log(senha);
+        // console.log(confirmSenha);
+        // console.log(cep);
+        // console.log(estado);
+        // console.log(cidade);
+        // console.log(rua);
+        // console.log(numero);
+        // console.log(complemento);
         e.preventDefault();
+        fetch('/', {
+            method: 'post',
+            headers: {'Content-Type':'application/json'},
+            body: JSON.stringify({
+                "nome": {nome}
+            })
+         });
     }
     const handleChangeNome = (e) =>{
         setNome(e.target.value)
