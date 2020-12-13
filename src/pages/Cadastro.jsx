@@ -3,7 +3,9 @@ import'./styles/cadastro.css';
 import '../components/componenteLogin/Caixa';
 import Caixa from '../components/componenteLogin/Caixa';
 import Checkbox from'../components/checkbox/Checkbox';
-import { Link } from 'react-router-dom';
+import listPessoas from '../components/exemplojson/login.json';
+import MyTable from '../components/MyTable/MyTable';
+import axios from 'axios';
 
 
 function Cadastro(){
@@ -23,8 +25,48 @@ function Cadastro(){
     const [rua, setRua] = useState("");
     const [numero, setNumero] = useState("");
     const [complemento, setComplemento] = useState("");
+    const [pessoas, setPessoas] = useState(listPessoas);
+    const [id, setId] = useState(pessoas.length+1);
+    const axios = require('axios');
 
     const handleSubmit = (e) =>{
+        const novaPessoa = {
+            id: id,
+            nome: nome,
+            cpf: cpf,
+            telefone: telefone,
+            dia: dia,
+            mes: mes,
+            ano: ano,
+            email: email,
+            senha: senha,
+            cep: cep,
+            estado: estado,
+            cidade: cidade,
+            rua: rua,
+            numero: numero,
+            complemento: complemento,
+        }
+        setId(id+1);
+
+        setPessoas([...pessoas, novaPessoa]);
+        
+        setNome("");
+        setCpf("");
+        setTelefone("");
+        setDia("");
+        setMes("");
+        setAno("");
+        setCep("");
+        setEmail("");
+        setConfirmEmail("");
+        setSenha("");
+        setConfirmSenha("");
+        setEstado("");
+        setCidade("");
+        setRua("");
+        setNumero("");
+        setComplemento("");
         // console.log("Botão Submit Pressionado!");
         // console.log(nome);
         // console.log(cpf);
@@ -43,13 +85,7 @@ function Cadastro(){
         // console.log(numero);
         // console.log(complemento);
         e.preventDefault();
-        fetch('/', {
-            method: 'post',
-            headers: {'Content-Type':'application/json'},
-            body: JSON.stringify({
-                "nome": {nome}
-            })
-         });
+
     }
     const handleChangeNome = (e) =>{
         setNome(e.target.value)
@@ -151,7 +187,7 @@ function Cadastro(){
                         <input className="BotaoCriar" type="submit" value="Criar conta"/>
                 </div>
             </form>
-            
+            <MyTable pessoas={pessoas} />
         </section>      
     );
     
