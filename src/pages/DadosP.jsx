@@ -3,6 +3,8 @@ import Avatar from '../components/avatar/Avatar';
 import './styles/dadosP.css';
 import Person from '../components/public/person3.jpg';
 import { Link } from 'react-router-dom';
+import MyChar from '../components/MyChar/MyChar';
+import MyPizza from '../components/MyChar/MyPizza';
 
 function DadosP(){
     const [browser, setBrowser] = useState(false)
@@ -35,7 +37,10 @@ function DadosP(){
                     </Link>
                 </ul>
             </div>
-            
+            <div className="container-char">
+                <MyChar />
+                <MyPizza />
+            </div>
         </div>
         
         </>
